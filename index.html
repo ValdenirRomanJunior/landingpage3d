@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>
-    <link rel="stylesheet" href="css/header.css"/>
-    <link rel="stylesheet" href="reset.css"/>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <title>Curso Impressao 3D</title>
 </head>
+
 <body>
 
     <div class="container">
-        <header class="header">
-                <div class="img-wrapper">
-                    <img src="img/fundo.jpg" alt="fundo impressão 3d">
-                </div>
-                <div class="banner-wrapper">
-                    <h1>curso de impressão 3d</h1>
-                        <p>voltado para festas infantis</p>
-                        <button>conhecer</button>
-                </div>
-        </header>
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+            <span>Fechar</span>
+        </div>
 
+        <header class="header">
+            <div class="img-wrapper">
+                <img src="img/fundo.jpg" alt="fundo impressão 3d">
+            </div>
+            <div class="banner-wrapper">
+                <h1>curso de impressão 3d</h1>
+                <p>voltado para festas infantis</p>
+                <button>conhecer</button>
+            </div>
+        </header>
+        <div class="sidebar">
+            <nav>
+                <ul class="menu">
+                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Detalhes</a></li>
+                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                  
+                </ul>
+            </nav>
+            <div class="social">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+        </div>
     </div>
     
 </body>
+    <script src="js/menu.js"></script>
 </html>

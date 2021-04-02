@@ -1,0 +1,119 @@
+.hamburguer{
+    width: 2rem;
+    height: 2rem;
+    position:fixed;
+    z-index: 100;
+    right: 1rem;
+    top:2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.show-menu .hamburguer{
+    right:7rem;
+    transition: all 1s;
+
+}
+.hamburguer span{
+    background-color: rebeccapurple;
+    position: absolute;
+    left: 2rem;
+    width: 4rem;
+    height: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#fff;
+    font-family: var(--font-action);
+    opacity: 0;
+}
+.hamburguer span::before{
+        content: "";
+        position: absolute;
+        border-right: .5rem solid #a044ff ;
+        border-top: .5rem solid transparent ;
+        border-left: .5rem solid transparent ;
+        border-bottom: .5rem solid transparent ;
+        left: -1rem;
+}
+.show-menu .hamburguer:hover span{
+    opacity: 1;
+}
+.line{
+    width: 100%;
+    background-color: #ffff;
+    height: .1rem;
+    box-shadow: 0.1rem 0.1rem 1px #000;
+    cursor: pointer;
+    transition:  transform 1s;
+}
+.show-menu #line1{
+    transform: rotate(45deg) translate(.1rem, .60rem);
+}
+.show-menu #line2{
+    opacity: 0;
+    visibility: hidden;
+}
+.show-menu #line3{
+    transform: rotate(-45deg) translate(-.1rem, -.60rem);
+}
+.sidebar{
+   
+    width: 10rem;
+    height: 100vh;
+    background-color: #fff;
+    position: fixed;
+    top:0;
+    right:-10rem;
+    transition: all 1s;
+
+}
+.show-menu .sidebar{
+    right: 0;
+
+}
+.menu{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  
+}
+.menu-item{
+    margin-bottom: 1rem;
+    text-align: center;
+}
+.menu-link{
+    font-family: var(--font-action);
+    color: #555;
+    font-size: 1.2rem;
+    transition: color 0.5s;
+}
+.menu-link:hover{
+    color: lawngreen;
+    
+}
+.social{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top:17rem;
+}
+.social i{
+    display: flex;
+    justify-content: center;
+   border-radius: 50%;
+    color: #555;
+    height: 1.2rem;
+    width: 1.2rem;
+    font-size: 1.2rem;
+    transition: background-color 0.5s;
+    align-items: center;
+}
+.social i:hover{
+    background-color: rgb(135, 207, 147);
+}
+
+
