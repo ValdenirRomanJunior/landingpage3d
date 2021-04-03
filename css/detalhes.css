@@ -1,0 +1,128 @@
+.sessao-detalhes{
+    background: #f5f5f5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+.detalhes{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.detalhe{
+    margin-bottom: 1.5rem;
+}
+.detalhe-header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sessao-header h1{
+    font-family: var(--font-primary);
+    font-size: 2rem;
+    color: rgb(119, 118, 118);
+    border-bottom: solid 2px #6a3093;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.detalhe-header i{
+    margin-bottom: 0.5rem;
+    color: rgb(49, 49, 49);
+    font-size: 2rem;
+}
+.detalhe-header h3{
+   
+    font-size: 1rem;
+    font-family: var(--font-secundary);
+    color: rgb(99, 99, 99);
+}
+.detalhe-text{
+    text-align: center;
+    font-family: var(--font-secundary);
+    margin-top: .5rem;
+    color: gray;
+}
+.detalhe-img-wrapper{
+    width: 50%;
+    margin-bottom: 2rem;
+}
+.detalhe-img-wrapper img{
+    width: 100%;
+    object-fit: cover;
+}
+@media screen and (min-width:1024px) {
+    
+    .detalhes{
+        display: grid;
+        grid-template-columns: repeat(16,1fr);
+        grid-template-rows: repeat(6,5rem);
+        row-gap: .5rem;
+    }
+
+    .detalhe:nth-child(1){
+        grid-column: 2/5;
+        grid-row: 1/5;
+    }
+    .detalhe:nth-child(2){
+        grid-column: 3/6 ;
+        grid-row: 4/6;
+    }
+    .detalhe:nth-child(3){
+        grid-column: 12/15;
+        grid-row: 4/6;
+    }
+    .detalhe:nth-child(4){
+        grid-column: 13/16;
+        grid-row: 1/3;
+    }
+
+    .sessao-detalhes{
+        background: #f5f5f5;
+    }
+    .sessao-header{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .sessao-header h1{
+        font-family: var(--font-primary);
+        font-size: 3rem;
+        color: rgb(119, 118, 118);
+        border-bottom: solid 3px #6a3093;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+    }
+    .detalhe-header{
+        display: flex;
+        align-items: center;
+        
+}
+.detalhe-header h3{
+    margin-left: 1rem;
+    font-size: 1.5rem;
+    font-family: var(--font-secundary);
+    color: rgb(99, 99, 99);
+}
+.detalhe-header i{
+    color: rgb(49, 49, 49);
+    font-size: 3rem;
+}
+.detalhe-text{
+    font-family: var(--font-secundary);
+    margin-top: 1rem;
+    color: gray;
+}
+
+.detalhe-img-wrapper{
+    grid-column: 7/11;
+    grid-row: 2/6;
+    width: 100%;
+}
+.detalhe-img-wrapper img{
+    object-fit: cover;
+    width: 100%;
+}
+}

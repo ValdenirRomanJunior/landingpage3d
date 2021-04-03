@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/contato.css" />
+    <link rel="stylesheet" href="css/detalhes.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -36,23 +38,113 @@
                 <button>conhecer</button>
             </div>
         </header>
-        <div class="sidebar">
+        <aside class="sidebar">
             <nav>
                 <ul class="menu">
                     <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Detalhes</a></li>
                     <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
-                  
+
                 </ul>
             </nav>
             <div class="social">
                 <a href="#"><i class="fab fa-facebook-f"></i></a>
                 <a href="#"><i class="fab fa-instagram"></i></a>
-                
+
             </div>
-        </div>
+        </aside>
+
+        <section class="sessao-detalhes">
+
+            <div class="sessao-header">
+                <h1>detalhes</h1>
+            </div>
+
+            <div class="detalhes">
+
+                <div class="detalhe">
+                    <div class="detalhe-header">
+                        <i class="fas fa-play-circle"></i>
+                        <h3>Módulo 1: </h3>
+                    </div>
+                    <div class="detalhe-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                            Adipisci fugit numquam velit itaque ullam! Consectetur hic suscipit,
+                            architecto nobis nesciunt quasi, quas nulla voluptatibus consequuntur praesentium natus
+                            itaque voluptatum maxime.</p>
+                    </div>
+                </div>
+
+
+                <div class="detalhe">
+                    <div class="detalhe-header">
+                        <i class="fas fa-cube"></i>
+                        <h3>Módulo 2:</h3>
+                    </div>
+                    <div class="detalhe-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ullam accusantium ipsum,
+                            sed deleniti est. Totam,
+                            minus repellat recusandae quidem repudiandae quasi autem commodi nostrum quia distinctio,
+                            voluptates laudantium facere?</p>
+                    </div>
+                </div>
+
+
+                <div class="detalhe">
+                    <div class="detalhe-header">
+                        <i class="fas fa-print"></i>
+                        <h3>Módulo 3:</h3>
+                    </div>
+                    <div class="detalhe-text">
+                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sint impedit sapiente,
+                            corporis aliquid adipisci ea quia,
+                            consectetur omnis reiciendis eum odit temporibus pariatur quas ipsa voluptatem molestias.
+                            Alias, maxime!</p>
+                    </div>
+                </div>
+
+
+                <div class="detalhe">
+                    <div class="detalhe-header">
+                        <i class="fas fa-gift"></i>
+                        <h3>Bônus</h3>
+                    </div>
+                    <div class="detalhe-text">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illo. Reiciendis,
+                            obcaecati. Eveniet neque,
+                            atque illum ab illo quasi temporibus natus deleniti tempore porro magni nemo architecto
+                            molestias. Nam, quam.</p>
+                    </div>
+                </div>
+                <div class="detalhe-img-wrapper">
+
+                    <img src="img/objetos-3d.jpg" alt="objetos 3d">
+                </div>
+            </div>
+        </section>
+        <section class="contato">
+
+            <h1>Contato</h1>
+            <form action="#" method="POST">
+                <label for="name">Nome</label>
+                <input type="text" name="name" placeholder="digite seu nome" required>
+
+                <label for="email">Email</label>
+                <input type="email" name="email" placeholder="digite seu e-mail" required>
+
+                <label for="message">Mensagem</label>
+                <textarea name="message" id="message" placeholder="deixe uma mensagem"></textarea>
+
+                <input class="enviar" type="submit" name="send" value="Enviar">
+            </form>
+
+
+
+        </section>
     </div>
-    
+
+
 </body>
-    <script src="js/menu.js"></script>
+<script src="js/menu.js"></script>
+
 </html>
