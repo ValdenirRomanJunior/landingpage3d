@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/menu.css" />
     <link rel="stylesheet" href="css/contato.css" />
     <link rel="stylesheet" href="css/detalhes.css" />
+    <link rel="stylesheet" href="css/footer.css" />
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
@@ -33,17 +34,20 @@
                 <img src="img/fundo.jpg" alt="fundo impressão 3d">
             </div>
             <div class="banner-wrapper">
-                <h1>curso de impressão 3d</h1>
+                <h1>Curso de impressão 3d</h1>
                 <p>voltado para festas infantis</p>
-                <button>conhecer</button>
+                <button><a href="#detalhes">Conhecer</a></button>
+            </div>
+            <div class="whatsapp">
+                <a href="https://web.whatsapp.com/send?phone=5545991511669" target="_blank"><i class="fab fa-whatsapp"></i></a>
             </div>
         </header>
         <aside class="sidebar">
             <nav>
                 <ul class="menu">
-                    <li class="menu-item"><a href="#" class="menu-link">Home</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Detalhes</a></li>
-                    <li class="menu-item"><a href="#" class="menu-link">Contato</a></li>
+                    <li class="menu-item"><a href="http://www.curso3dfesta.com.br/" class="menu-link">Home</a></li>
+                    <li class="menu-item"><a href="#detalhes" class="menu-link">Detalhes</a></li>
+                    <li class="menu-item"><a href="#contato" class="menu-link">Contato</a></li>
 
                 </ul>
             </nav>
@@ -57,8 +61,12 @@
         <section class="sessao-detalhes">
 
             <div class="sessao-header">
-                <h1>detalhes</h1>
+                <h1><a name="detalhes">Detalhes</a></h1>
             </div>
+            <p>Olá, neste curso você vai aprender passo a passo como trabalhar com impressão 3D
+                no segmento de festas infantis, vamos modelar um artigo do zero até a impressão.
+                Falaremos também sobre os equipamentos e programas que utilizaremos no curso.
+            </p>
 
             <div class="detalhes">
 
@@ -68,24 +76,26 @@
                         <h3>Módulo 1: </h3>
                     </div>
                     <div class="detalhe-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            Adipisci fugit numquam velit itaque ullam! Consectetur hic suscipit,
-                            architecto nobis nesciunt quasi, quas nulla voluptatibus consequuntur praesentium natus
-                            itaque voluptatum maxime.</p>
-                    </div>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Aprensentação do curso</li>
+                            <li><i class="fas fa-check-double"></i>Equipamentos e investimento</li>
+                            <li><i class="fas fa-check-double"></i>Montagem da impressora </li>
+                        </ul>
+                       </div>
                 </div>
-
 
                 <div class="detalhe">
                     <div class="detalhe-header">
                         <i class="fas fa-cube"></i>
                         <h3>Módulo 2:</h3>
                     </div>
-                    <div class="detalhe-text">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ullam accusantium ipsum,
-                            sed deleniti est. Totam,
-                            minus repellat recusandae quidem repudiandae quasi autem commodi nostrum quia distinctio,
-                            voluptates laudantium facere?</p>
+                    <div class="detalhe-text"> 
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Instalação e configuração </li>
+                            <li><i class="fas fa-check-double"></i>Introduçao a Modelagem </li>
+                            <li><i class="fas fa-check-double"></i>Introdução ao fatiador Cura</li>
+                        </ul>      
+                     
                     </div>
                 </div>
 
@@ -96,10 +106,12 @@
                         <h3>Módulo 3:</h3>
                     </div>
                     <div class="detalhe-text">
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita sint impedit sapiente,
-                            corporis aliquid adipisci ea quia,
-                            consectetur omnis reiciendis eum odit temporibus pariatur quas ipsa voluptatem molestias.
-                            Alias, maxime!</p>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Modelagem de um objeto</li>
+                            <li><i class="fas fa-check-double"></i>Parâmetros de impressão</li>
+                            <li><i class="fas fa-check-double"></i>Impressão do objeto</li>
+                        </ul>
+                       
                     </div>
                 </div>
 
@@ -110,11 +122,13 @@
                         <h3>Bônus</h3>
                     </div>
                     <div class="detalhe-text">
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus, illo. Reiciendis,
-                            obcaecati. Eveniet neque,
-                            atque illum ab illo quasi temporibus natus deleniti tempore porro magni nemo architecto
-                            molestias. Nam, quam.</p>
-                    </div>
+                        <ul>
+                            <li><i class="fas fa-check-double"></i>Modelagem de um "Sorvete"</li>
+                            <li><i class="fas fa-check-double"></i>Impressão do objeto</li>
+                            <li><i class="fas fa-check-double"></i>Finalização do curso</li>
+                        </ul>
+                       
+                </div>
                 </div>
                 <div class="detalhe-img-wrapper">
 
@@ -124,8 +138,10 @@
         </section>
         <section class="contato">
 
-            <h1>Contato</h1>
-            <form action="#" method="POST">
+            <h1><a name="contato">Contato</a></h1>
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <input type="hidden" name="redirectTo" value="http://www.curso3dfesta.com.br/">
+                <input type="hidden" name="accessKey" value="46e56305-4465-4f67-a731-ba6e70c1d94a">
                 <label for="name">Nome</label>
                 <input type="text" name="name" placeholder="digite seu nome" required>
 
@@ -138,11 +154,21 @@
                 <input class="enviar" type="submit" name="send" value="Enviar">
             </form>
 
+        </section>
+        <section class="footer">
+            <nav class="nav">
+                <ul class="icones-sociais">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-whatsapp"></i></li>
+                </ul>
+            </nav>
+            <span>&copy;Print Cutter</span>
+            <span>princutter@outlook.com</span>
 
 
         </section>
     </div>
-
 
 </body>
 <script src="js/menu.js"></script>

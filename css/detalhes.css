@@ -1,26 +1,40 @@
-.sessao-detalhes{
+.sessao-detalhes {
     background: #f5f5f5;
     display: flex;
     flex-direction: column;
     align-items: center;
-   
 }
-.detalhes{
+
+.sessao-detalhes p {
+    text-align: center;
+    font-family: var(--font-primary);
+    color: rgb(64, 102, 114);
+    font-size: 1rem;
+    margin: 1rem;
+}
+
+.detalhes {
     margin-left: 1rem;
     margin-right: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.detalhe{
+
+.detalhe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 1.5rem;
 }
-.detalhe-header{
+
+.detalhe-header {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-.sessao-header h1{
+
+.sessao-header h1 {
     font-family: var(--font-primary);
     font-size: 2rem;
     color: rgb(119, 118, 118);
@@ -28,66 +42,90 @@
     margin-bottom: 2rem;
     margin-top: 1rem;
 }
-.detalhe-header i{
+
+.detalhe-header i {
     margin-bottom: 0.5rem;
     color: rgb(49, 49, 49);
     font-size: 2rem;
 }
-.detalhe-header h3{
-   
+
+.detalhe-header i:hover {
+    opacity: 0.7;
+    transition: 0.3s;
+}
+
+.detalhe-header h3 {
     font-size: 1rem;
     font-family: var(--font-secundary);
     color: rgb(99, 99, 99);
 }
-.detalhe-text{
+
+.detalhe-text {
+    display: flex;
+    justify-content: center;
     text-align: center;
     font-family: var(--font-secundary);
     margin-top: .5rem;
     color: gray;
 }
-.detalhe-img-wrapper{
+
+
+
+.detalhe-text li {
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+
+.detalhe-text i {
+    color: rgb(102, 102, 243);
+}
+
+.detalhe-text li i::after {
+    content: "  - ";
+}
+
+.detalhe-img-wrapper {
     width: 50%;
     margin-bottom: 2rem;
 }
-.detalhe-img-wrapper img{
+
+.detalhe-img-wrapper img {
     width: 100%;
     object-fit: cover;
 }
+
 @media screen and (min-width:1024px) {
-    
-    .detalhes{
+    .detalhes {
         display: grid;
-        grid-template-columns: repeat(16,1fr);
-        grid-template-rows: repeat(6,5rem);
+        grid-template-columns: repeat(16, 1fr);
+        grid-template-rows: repeat(6, 5rem);
         row-gap: .5rem;
     }
-
-    .detalhe:nth-child(1){
+    .detalhe:nth-child(1) {
         grid-column: 2/5;
-        grid-row: 1/5;
+        grid-row: 1/4;
     }
-    .detalhe:nth-child(2){
-        grid-column: 3/6 ;
+    .detalhe:nth-child(2) {
+        grid-column: 3/6;
         grid-row: 4/6;
     }
-    .detalhe:nth-child(3){
+    .detalhe:nth-child(3) {
+        grid-column: 13/16;
+        grid-row: 1/4;
+    }
+    .detalhe:nth-child(4) {
         grid-column: 12/15;
         grid-row: 4/6;
     }
-    .detalhe:nth-child(4){
-        grid-column: 13/16;
-        grid-row: 1/3;
-    }
-
-    .sessao-detalhes{
+    .sessao-detalhes {
         background: #f5f5f5;
     }
-    .sessao-header{
+    .sessao-header {
         display: flex;
         align-items: center;
         justify-content: center;
     }
-    .sessao-header h1{
+    .sessao-header h1 {
         font-family: var(--font-primary);
         font-size: 3rem;
         color: rgb(119, 118, 118);
@@ -95,34 +133,36 @@
         margin-bottom: 1rem;
         margin-top: 1rem;
     }
-    .detalhe-header{
+    .detalhe-header {
         display: flex;
         align-items: center;
-        
-}
-.detalhe-header h3{
-    margin-left: 1rem;
-    font-size: 1.5rem;
-    font-family: var(--font-secundary);
-    color: rgb(99, 99, 99);
-}
-.detalhe-header i{
-    color: rgb(49, 49, 49);
-    font-size: 3rem;
-}
-.detalhe-text{
-    font-family: var(--font-secundary);
-    margin-top: 1rem;
-    color: gray;
-}
-
-.detalhe-img-wrapper{
-    grid-column: 7/11;
-    grid-row: 2/6;
-    width: 100%;
-}
-.detalhe-img-wrapper img{
-    object-fit: cover;
-    width: 100%;
-}
+    }
+    .detalhe-header h3 {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        font-family: var(--font-secundary);
+        color: rgb(99, 99, 99);
+    }
+    .detalhe-header i {
+        color: rgb(49, 49, 49);
+        font-size: 3rem;
+    }
+    .detalhe-img-wrapper {
+        grid-column: 7/11;
+        grid-row: 2/6;
+        width: 100%;
+    }
+    .detalhe-img-wrapper img {
+        object-fit: cover;
+        width: 100%;
+    }
+    .detalhe-img-wrapper img:hover {
+        transition: 400ms ease-in-out;
+        transform: scale(1.2);
+    }
+    .sessao-detalhes p {
+        color: rgb(64, 102, 114);
+        font-size: 1.5rem;
+        width: 50%;
+    }
 }

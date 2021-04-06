@@ -1,0 +1,32 @@
+.footer{
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+    height: 10rem;
+    width: 100%;
+    background:rgb(66, 66, 66);
+}
+.nav{
+    width: 50%;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.icones-sociais{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.icones-sociais li:nth-child(3){
+    color:rgb(42, 185, 42);
+}
+.icones-sociais li{
+    margin-left: 0.3rem;
+    color: #fff;
+}
+.icones-sociais i{
+    font-size: 1.5rem;
+}
+.footer span{
+    font-family: var(--font-primary);
+    color: #fff;
+}

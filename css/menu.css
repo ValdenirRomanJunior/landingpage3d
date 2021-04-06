@@ -1,4 +1,5 @@
 .hamburguer{
+    cursor: pointer;
     width: 2rem;
     height: 2rem;
     position:fixed;
@@ -114,6 +115,19 @@
 }
 .social i:hover{
     background-color: rgb(135, 207, 147);
+}
+
+@media screen and (min-width:1024px){
+    .hamburguer{
+        right: 2rem;
+        
+    }
+    .sidebar{
+        width: 13rem;
+        right: -13rem;
+       
+        
+    }
 }
 
 
